@@ -1,5 +1,27 @@
                                           Road Accident Analysis
 
+🚦 Road Accident Analysis — Power BI Dashboard
+A Power BI dashboard analyzing UK road accident data for 2021 and 2022, built to uncover patterns in casualty severity, vehicle involvement, road conditions, and geographic hotspots.
+
+📊 Dashboard Overview
+The dashboard is filtered globally by Road Surface Conditions and Weather Conditions dropdowns, affecting all visuals simultaneously.
+KPI Cards
+KPIDescriptionTotal CasualtiesTotal people injured or killed across all accidentsTotal AccidentsCount of unique accident recordsFatal CasualtiesAccidents with severity = FatalSerious CasualtiesAccidents with severity = SeriousSlight CasualtiesAccidents with severity = Slight
+Each KPI shows a YoY % change vs the previous year.
+
+📈 Visuals
+VisualChart TypeField UsedCasualties by VehiclePictogram / Card ListVehicle_TypeCasualties by Month and YearArea ChartAccident DateCasualties by Urban/Rural AreaDonut ChartUrban_or_Rural_AreaCasualties by Road TypeHorizontal Bar ChartRoad_TypeCasualties by Light ConditionsDonut ChartLight_ConditionsCasualties by LocationMapLatitude / Longitude
+
+🗂️ Dataset
+
+Source: UK Police-reported road accident records
+Years: 2021 – 2022
+Granularity: One row per accident (Accident_Index is the primary key)
+
+Key Columns
+ColumnDescriptionAccident_IndexUnique accident ID (Primary Key)Accident_SeverityFatal / Serious / SlightNumber_of_CasualtiesTotal casualties per accidentVehicle_TypeCar, Bike, Bus, Van, Agricultural, etc.Road_TypeSingle carriageway, Dual, Roundabout, etc.Road_Surface_ConditionsDry, Wet or damp, Frost/Ice, etc.Light_ConditionsDaylight / DarkUrban_or_Rural_AreaUrban / RuralWeather_ConditionsFine, Rain, Snow, Fog, etc.Latitude / LongitudeCoordinates for map visual
+
+
 1. Project Overview
 This Power BI dashboard provides an end-to-end visual analysis of road accident data recorded across the United Kingdom for the years 2021 and 2022. The goal is to surface actionable insights about accident severity, contributing conditions, and geographic hotspots to support road safety decision-making.
 The dashboard enables stakeholders to quickly understand where accidents are happening, under what conditions, and which vehicle types are most involved, while tracking year-over-year changes across all key metrics.
